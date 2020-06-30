@@ -2,6 +2,12 @@
 
 This directory contains a blueprint for creating a Kubeflow deployment.
 
+{{% alert title="Deprecated" color="warning" %}}
+
+For the latest instructions please see the website [https://master.kubeflow.org/docs/gke/deploy/deploy-cli/](https://master.kubeflow.org/docs/gke/deploy/deploy-cli/)
+
+{{% /alert %}}
+
 ## Prerequisites
 
 You must have created a management cluster and installed Config Connector. 
@@ -82,7 +88,7 @@ gcloud.compute.zone | The zone to use for zonal resources; must be in gcloud.com
 
 * Location can be a zone or a region depending on whether you want a regional cluster
   
-* The **Makefile** contains a rule `set-values` with approprt `kpt cfg` commands to set the values
+* The **Makefile** contains a rule `set-values` with appropriate `kpt cfg` commands to set the values
   of the parameters
 
 * You need to edit the makefile to set the parameters to the desired values.
